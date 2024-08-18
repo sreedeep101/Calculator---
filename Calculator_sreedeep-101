@@ -1,0 +1,65 @@
+#CALCULATOR....
+#programme for addition subtraction multiplication and division 
+def sum():
+    num1=int(input("enter number 1 :\n"))
+    num2=int(input("enter number 2 :\n"))
+    add=num1+num2
+    return add
+def substraction():
+    num1=int(input("enter number 1 :\n"))
+    num2=int(input("enter number 2 :\n"))
+    substract=num1-num2
+    return substract
+def division():
+    num1=int(input("enter number 1 :\n"))
+    num2=int(input("enter number 2 :\n"))
+    division=num1/num2
+    return division    
+def multiplication():
+    num1=int(input("enter number 1 :\n"))
+    num2=int(input("enter number 2 :\n"))
+    multiplication=num1*num2
+    return multiplication    
+ #displaying the operation that can do here      
+mdss_list=["sum","substraction","division","multiplication"]  
+for count in range(0,4,1) :
+    print(f"{count+1} : {mdss_list[count]}") 
+    
+print(" ")   
+choose=int(input("select any operation from above list :\n"))
+#to choose operation given above 
+
+if choose == 1 :
+    print("\n")
+    print("  You Selected Addition Operation\n")
+    while True:
+        add=sum()
+        print(f"sum = {add}")#if press 1 addition operation can do
+        print("-------------------------------\n")
+elif choose == 2 :
+    print("\n")
+    print("  You Selected substraction Operation\n")
+    while True:
+        sub=substraction()
+        print(f"substraction = {sub}")#if press 2 substraction operation can do
+        print("-------------------------------\n")
+elif choose == 3 :
+    print("\n")
+    print("  You Selected division Operation\n")
+    while True:
+        div=division()
+        print(f"division = {div}") #if press 3 division operation can do   
+        print("-------------------------------\n")
+elif choose == 4 :
+    print("\n")
+    print("  You Selected multiplication Operation\n")
+    while True:
+        mul=multiplication()
+        print(f"multiplication = {mul}")#if press 4 multiplication operation can do
+        print("-------------------------------\n")
+else:
+    print("\n")
+    print("there is no such operation available")  
+    print("___________________________________")
+    print("            THANK YOU......         ")
+
